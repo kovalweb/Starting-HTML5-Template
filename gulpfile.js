@@ -18,17 +18,17 @@ var gulp           = require('gulp'),
 		app: {
 			html:  'app/*.html',
 			libs:  'app/assets/libs/',
-			js:    'app/assets/js',
-			css:   'app/assets/css',
-			img:   'app/assets/img',
-			fonts: 'app/assets/fonts',
+			js:    'app/assets/js/',
+			css:   'app/assets/css/',
+			img:   'app/assets/img/',
+			fonts: 'app/assets/fonts/',
 			sass:  'app/assets/' + syntax + '/',
 		},
 		build: {
-			js:    'build/assets/js',
-			css:   'build/assets/css',
-			img:   'build/assets/img',
-			fonts: 'build/assets/fonts',
+			js:    'build/assets/js/',
+			css:   'build/assets/css/',
+			img:   'build/assets/img/',
+			fonts: 'build/assets/fonts/',
 		}
 	};
 
