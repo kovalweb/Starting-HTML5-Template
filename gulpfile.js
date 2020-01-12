@@ -3,6 +3,7 @@ var gulp           = require('gulp'),
 	browserSync    = require('browser-sync'),
 	concat         = require('gulp-concat'),
 	uglify         = require('gulp-uglify'),
+	cssbeautify    = require("gulp-cssbeautify"),
 	cleanCSS       = require('gulp-clean-css'),
 	cache          = require('gulp-cache'),
 	imagemin       = require('gulp-imagemin'),
@@ -50,12 +51,15 @@ gulp.task('script', function() {
 gulp.task('style', function() {
 	return gulp.src(path.app.sass + '**/*.' + syntax + '')
 	.pipe(sass())
-	.pipe(concat("style.min.css"))
 	.pipe(autoprefixer({
 		grid: true,
 		overrideBrowserslist: ['last 15 versions']
 	}))
+	.pipe(cssbeautify())
+	.pipe(concat("style.css"))
+	.pipe(gulp.dest(path.app.css))
 	.pipe(cleanCSS())
+	.pipe(concat("style.min.css"))
 	.pipe(gulp.dest(path.app.css))
 	.pipe(browserSync.stream())
 });

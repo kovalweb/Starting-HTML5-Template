@@ -17,6 +17,7 @@
     "gulp-cache": "^1.1.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
+    "gulp-cssbeautify": "^2.0.0",
     "gulp-imagemin": "^6.0.0",
     "gulp-rimraf": "^0.2.2",
     "gulp-sass": "^4.0.2",

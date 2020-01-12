@@ -223,59 +223,6 @@
 
 		},
 
-		//=== Custom alert ===\\
-		customAlert: function(text, duration, alertInfo) {
-
-			var alerts = $(".alerts"),
-				body = $("body"),
-				alertClass = "",
-				alertIco = "info";
-			
-			if (!alerts.length) {
-				body.append('<div class="alerts"></div>');
-			}
-			$(".alert").remove();
-
-			if (alertInfo === "success") {
-				alertClass = "alert-success";
-				alertIco = "check";
-			} else if (alertInfo === "danger") {
-				alertClass = "alert-danger";
-				alertIco = "error";
-			} else if (alertInfo === "warning") {
-				alertClass = "alert-warning";
-				alertIco = "warning";
-			} else if (alertInfo == "default") {
-				alertClass = "alert-default";
-				alertIco = "info";
-			}
-
-			if (!$("." + alertClass + "").length) {
-				$(".alerts").append(
-				'<div class="alert ' +
-					alertClass +
-					'" data-duration-hide="' +
-					duration +
-					'"> <div class="alert-ico"> <i class="material-icons md-22">' +
-					alertIco +
-					'</i> </div> <div class="alert-text">' +
-					text +
-					"</div> </div>"
-				);
-
-				setTimeout(function() {
-					$("." + alertClass + "").remove();
-				}, duration);
-			}
-
-			$(document).on("click", ".alert-close", function() {
-				$(this)
-				.closest(".alert")
-				.remove();
-			});
-
-		},
-
 		//=== Plugins ===\\
 
 		lazyLoading: function() {
@@ -324,8 +271,6 @@
 
 		forms: function() {
 
-			var ajaxurl = "/mail.php";
-
 			$.validator.addMethod("customemail", function (value, element) {
 				return /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(value);
 			},
@@ -367,20 +312,10 @@
 					
 					close.click();
 
-					$.ajax({
-						type: "POST",
-						url: ajaxurl,
-						data: th.serialize()
-					}).done(function() {
-
-						app.customAlert("Successfully sent!", 4000, "success");
-
-						setTimeout(function() {
-							th.trigger("reset");
-							$(".form-field").removeClass("focus");
-						}, 1000);
-
-					});
+					setTimeout(function() {
+						th.trigger("reset");
+						$(".form-field").removeClass("focus");
+					}, 1000);
 
 				}
 			});
