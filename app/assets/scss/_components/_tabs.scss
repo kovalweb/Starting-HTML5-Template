@@ -1,0 +1,142 @@
+.tabs {
+    position: relative;
+}
+.tabs-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: $el-border-width solid $c_border;
+    color: $c_text;
+    li {
+        padding: 0.625rem 0;
+        margin-right: 2.5rem;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.25s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -1px;
+            width: 0;
+            height: 2px;
+            background-color: $c_main;
+            transform: translateX(-50%);
+            transition: all 0.25s;
+        }
+        &.active, &:hover {
+            color: $c_main;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.tabs-item {
+    display: none;
+    padding-top: 2rem;
+    &.active {
+        display: block;
+    }
+}
+
+.tabs-vertical {
+    display: flex;
+    align-items: flex-start;
+    .tabs-nav {
+        display: block;
+        border: none;
+        width: 255px;
+        min-width: 255px;
+        border-radius: $el-border-radius;
+        overflow: hidden;
+        li {
+            width: 100%;
+            margin: 0;
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid $c_border;
+            &:last-child {
+                border: none;
+            }
+            &::after {
+                content: none;
+            }
+            &:hover, &.active {
+                background-color: $c_main;
+                color: $c_white;
+            }
+        }
+    }
+    .tabs-item {
+        padding-top: 0;
+    }
+    .tabs-container {
+        padding-left: 2rem;
+    }
+}
+
+.tabs-container {
+    width: 100%;
+}
+
+@include media-breakpoint-down(md) {
+
+    .tabs-vertical .tabs-nav {
+        min-width: 225px;
+        width: 225px;
+    }
+
+}
+
+@include media-breakpoint-down(sm) {
+
+    .tabs-vertical {
+        flex-wrap: wrap;
+        .tabs-nav {
+            width: 100%;
+            li {
+                padding: 0.625rem 1rem;
+            }
+        }
+        .tabs-container {
+            padding-left: 0;
+            padding-top: 1.5rem;
+        }
+    }
+    .tabs-item {
+        padding-top: 0;
+    }
+    .tabs-container {
+        padding-top: 1.5rem;
+    }
+
+    .tabs-nav {
+        flex-wrap: wrap;
+        border: none;
+        border-radius: $el-border-radius;
+        background-color: $c_bgc;
+        overflow: hidden;
+        li {
+            width: 100%;
+            margin: 0;
+            border-bottom: $el-border-width solid $c_border;
+            &:last-child {
+                border-bottom: none;
+            }
+            &::after {
+                content: none;
+            }
+            padding: 0.625rem 1rem;
+            &:hover, &.active {
+                background-color: $c_main;
+                color: $c_white;
+            }
+        }
+    }
+
+}

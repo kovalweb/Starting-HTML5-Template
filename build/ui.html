@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>UI elements</title>
+
+	<meta name="description" content="Description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	
+	<link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+
+<body>
+
+	<main class="main">
+		
+		<div class="main-inner">
+			
+			<!-- Begin header -->
+			<header class="header">
+				<div class="header-fixed">
+					<div class="container">
+						<div class="row align-items-center justify-content-between">
+							<div class="col-auto">
+								<!-- Begin logo -->
+								<a href="/" class="logo">Mirage</a><!-- End logo -->
+							</div>
+							<div class="col-auto">
+								<nav class="main-mnu">
+									<ul>
+										<li><a href="ui.html">UI</a></li>
+										<li><a href="article.html">Article</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="col-auto">
+								<div class="wrapp-btn">
+									<a href="#сallback_popup" class="btn btn-small ripple сallback_popup_open">Call Back</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header><!-- End header -->
+			
+			<!-- Begin main content -->
+			<div class="main-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="wrapp-page-title page-title-center">
+								<h1 class="page-title">UI elements</h1>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="page-sections">
+								<section class="section">
+									<h4>Button Sizes</h4>
+									<div class="wrapp-btn align-items-center">
+										<a href="#!" class="btn btn-large ripple">Large size</a>
+										<a href="#!" class="btn ripple">Default size</a>
+										<a href="#!" class="btn btn-small ripple">Small size</a>
+									</div>
+									<br>
+									<div class="wrapp-btn align-items-center">
+										<a href="#!" class="btn btn-border btn-small ripple"><span>Small size</span></a>
+										<a href="#!" class="btn btn-border ripple"><span>Default size</span></a>
+										<a href="#!" class="btn btn-border btn-large ripple"><span>Large size</span></a>
+									</div>
+								</section>
+								<section class="section">
+									<h4>Button Width Ico</h4>
+									<div class="wrapp-btn align-items-center">
+										<a href="#!" class="btn btn-widht-ico btn-large ripple">
+											<span>Large size</span>
+											<svg class="btn-widht-ico-right" xmlns="http://www.w3.org/2000/svg" width="13" height="9" viewBox="0 0 13 9">
+												<path d="M1074.82,2574.07l-3.87-3.89a0.592,0.592,0,0,0-.85,0,0.6,0.6,0,0,0,0,.86l2.84,2.85H1062.6a0.61,0.61,0,0,0,0,1.22h10.34l-2.84,2.85a0.61,0.61,0,0,0,.43,1.04,0.576,0.576,0,0,0,.42-0.18l3.87-3.89A0.6,0.6,0,0,0,1074.82,2574.07Z" transform="translate(-1062 -2570)"/>
+											</svg>											  
+										</a>
+										<a href="#!" class="btn btn-widht-ico ripple">
+											<span>Default size</span>
+											<svg class="btn-widht-ico-right" xmlns="http://www.w3.org/2000/svg" width="13" height="9" viewBox="0 0 13 9">
+												<path d="M1074.82,2574.07l-3.87-3.89a0.592,0.592,0,0,0-.85,0,0.6,0.6,0,0,0,0,.86l2.84,2.85H1062.6a0.61,0.61,0,0,0,0,1.22h10.34l-2.84,2.85a0.61,0.61,0,0,0,.43,1.04,0.576,0.576,0,0,0,.42-0.18l3.87-3.89A0.6,0.6,0,0,0,1074.82,2574.07Z" transform="translate(-1062 -2570)"/>
+											</svg>	
+										</a>
+										<a href="#!" class="btn btn-widht-ico btn-small ripple">
+											<span>Small size</span>
+											<svg class="btn-widht-ico-right" xmlns="http://www.w3.org/2000/svg" width="13" height="9" viewBox="0 0 13 9">
+												<path d="M1074.82,2574.07l-3.87-3.89a0.592,0.592,0,0,0-.85,0,0.6,0.6,0,0,0,0,.86l2.84,2.85H1062.6a0.61,0.61,0,0,0,0,1.22h10.34l-2.84,2.85a0.61,0.61,0,0,0,.43,1.04,0.576,0.576,0,0,0,.42-0.18l3.87-3.89A0.6,0.6,0,0,0,1074.82,2574.07Z" transform="translate(-1062 -2570)"/>
+											</svg>	
+										</a>
+									</div>
+								</section>
+								<section class="section">
+									<h4>Input Sizes</h4>
+									<div class="row gutters-default">
+										<div class="col-4">
+											<div class="form-field form-field-small">
+												<label for="input-size-small" class="form-field-label">Small</label>
+												<input type="text" class="form-field-input" name="InputSizeSmall" value="" autocomplete="off" id="input-size-small">
+											</div>
+										</div>
+										<div class="col-4">
+											<div class="form-field">
+												<label for="input-size-standard" class="form-field-label">Standard</label>
+												<input type="text" class="form-field-input" name="InputSizeStandard" value="" autocomplete="off" id="input-size-standard">
+											</div>
+										</div>
+										<div class="col-4">
+											<div class="form-field form-field-large">
+												<label for="input-size-large" class="form-field-label">Large</label>
+												<input type="text" class="form-field-input" name="InputSizeLarge" value="" autocomplete="off" id="input-size-large">
+											</div>
+										</div>
+									</div>
+								</section>
+								<section class="section">
+									<h4>Textarea Sizes</h4>
+									<div class="row gutters-default">
+										<div class="col-4">
+											<div class="form-field form-field-small">
+												<label for="textarea-size-small" class="form-field-label">Small</label>
+												<textarea name="TextareaSizeSmall" class="form-field-input" id="textarea-size-small" cols="30" rows="3"></textarea>
+											</div>
+										</div>
+										<div class="col-4">
+											<div class="form-field">
+												<label for="textarea-size-standard" class="form-field-label">Standard</label>
+												<textarea name="TextareaSizeStandard" class="form-field-input" id="textarea-size-standard" cols="30" rows="3"></textarea>
+											</div>
+										</div>
+										<div class="col-4">
+											<div class="form-field form-field-large">
+												<label for="textarea-size-large" class="form-field-label">Large</label>
+												<textarea name="TextareaSizeLarge" class="form-field-input" id="textarea-size-large" cols="30" rows="3"></textarea>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section class="section">
+									<h4>States</h4>
+									<div class="row gutters-default">
+										<div class="col-4">
+											<div class="form-field">
+												<label for="input-states-standard" class="form-field-label">Standard</label>
+												<input type="text" class="form-field-input" name="InputStatesStandard" value="" autocomplete="off" id="input-states-standard">
+											</div>
+										</div>
+										<div class="col-4">
+											<div class="form-field">
+												<label for="input-states-error" class="form-field-label">Invalid input</label>
+												<input type="text" class="form-field-input error" name="InputStatesError" value="" autocomplete="off" id="input-states-error">
+												<label class="error" for="input-states-error">The field is required.</label>
+											</div>
+										</div>
+										<div class="col-4">
+											<div class="form-field">
+												<label for="input-states-disabled" class="form-field-label">Disabled</label>
+												<input type="text" class="form-field-input" name="InputStatesDisabled" value="" autocomplete="off" disabled="disabled" id="input-states-disabled">
+											</div>
+										</div>
+									</div>
+								</section>
+								<section class="section">
+									<h4>Labelled Input</h4>
+									<div class="row gutters-default">
+										<div class="col-12">
+											<div class="form-field">
+												<label for="input-states-labelled">Label</label>
+												<div class="form-field-group">
+													<label for="input-states-labelled" class="form-field-label">Placeholder</label>
+													<input type="text" class="form-field-input" name="InputLabelled" value="" autocomplete="off" id="input-states-labelled">
+												</div>
+												<small>* Input hint text</small>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section class="section">
+									<h4>Checkboxes</h4>
+									<div class="custom-controls">
+										<div class="custom-control checkbox">
+											<input type="checkbox" class="checkbox-input" name="checkboxLogin" id="checkbox-unchecked">
+											<label for="checkbox-unchecked" class="checkbox-label">
+												<span class="checkbox-ico">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+												</span>
+												Unchecked
+											</label>
+										</div>
+										<div class="custom-control checkbox">
+											<input type="checkbox" class="checkbox-input" name="checkboxLogin" id="checkbox-checked" checked="checked">
+											<label for="checkbox-checked" class="checkbox-label">
+												<span class="checkbox-ico">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+												</span>
+												Checked
+											</label>
+										</div>
+									</div>
+								</section>
+								<section class="section">
+									<h4>Radios</h4>
+									<div class="custom-controls">
+										<div class="custom-control radio">
+											<input type="radio" class="radio-input" name="radios" id="radio-unchecked">
+											<label for="radio-unchecked" class="radio-label">
+												Unchecked
+											</label>
+										</div>
+										<div class="custom-control radio">
+											<input type="radio" class="radio-input" name="radios" id="radio-checked" checked="checked">
+											<label for="radio-checked" class="radio-label">
+												Checked
+											</label>
+										</div>
+									</div>
+								</section>
+								<section class="section">
+									<h4>Select Sizes</h4>
+									<div class="row gutters-default">
+										<div class="col-md">
+											<div class="form-field form-field-small focus">
+												<div class="select">
+													<select>
+														<option>Select an option</option>
+														<option value="1">One</option>
+														<option value="2">Two</option>
+														<option value="3">Three</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-md">
+											<div class="form-field focus">
+												<div class="select">
+													<select>
+														<option>Select an option</option>
+														<option value="1">One</option>
+														<option value="2">Two</option>
+														<option value="3">Three</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-md">
+											<div class="form-field form-field-large focus">
+												<div class="select">
+													<select>
+														<option>Select an option</option>
+														<option value="1">One</option>
+														<option value="2">Two</option>
+														<option value="3">Three</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section class="section">
+									<h4>Alerts Colors</h4>
+									<div class="alerts alerts-static">
+										<div class="alert" role="alert">
+											<div class="alert-text">
+												A simple default alert. Here is <a href="#!">an example link</a>.
+											</div>
+										</div>
+										<div class="alert alert-success" role="alert">
+											<div class="alert-text">
+												A simple success alert. Here is <a href="#!">an example link</a>.
+											</div>
+										</div>
+										<div class="alert alert-danger" role="alert">
+											<div class="alert-text">
+												A simple danger alert. Here is <a href="#!">an example link</a>.
+											</div>
+										</div>
+										<div class="alert alert-warning" role="alert">
+											<div class="alert-text">
+												A simple warning alert. Here is <a href="#!">an example link</a>.
+											</div>
+										</div>
+									</div>
+								</section>
+								<div class="section">
+									<h4>Modal Effects</h4>
+									<div class="wrapp-btn">
+										<a href="#popup1" class="btn ripple popup1_open" data-popup-ordinal="0" id="open_43581259">Fade in &amp; Scale increase</a>
+										<a href="#popup2" class="btn ripple popup2_open" data-popup-ordinal="0" id="open_74536922">Fade in &amp; Scale decrease</a>
+										<a href="#popup7" class="btn ripple popup7_open" data-popup-ordinal="0" id="open_88320706">Side Fall</a>
+										<a href="#popup8" class="btn ripple popup8_open" data-popup-ordinal="0" id="open_6539351">3D Flip (horizontal)</a>
+										<a href="#popup9" class="btn ripple popup9_open" data-popup-ordinal="0" id="open_5399620">3D Flip (vertical)</a>
+										<a href="#popup3" class="btn ripple popup3_open" data-popup-ordinal="0" id="open_840041">Slide in (right)</a>
+										<a href="#popup4" class="btn ripple popup4_open" data-popup-ordinal="0" id="open_67703355">Slide in (left)</a>
+										<a href="#popup5" class="btn ripple popup5_open" data-popup-ordinal="0" id="open_45474694">Slide in (top)</a>
+										<a href="#popup6" class="btn ripple popup6_open" data-popup-ordinal="0" id="open_46803661">Slide in (bottom)</a>
+									</div>
+								</div>
+								<section class="section">
+									<h4>Horizontal Tabs</h4>
+									<div class="tabs">
+										<ul class="tabs-nav">
+											<li class="active">Tab 1</li>
+											<li>Tab 2</li>
+											<li>Tab 3</li>
+											<li>Tab 4</li>
+										</ul>
+										<div class="tabs-container">
+											<div class="tabs-item content active">
+												<p>Learning to program means learning how to solve problems using code. Conceptually it
+													is not very difficult to write a program that solves a problem that you can solve
+													yourself. The skill you need to acquire is thinking very precisely about how you
+													solve the problem and breaking it down into steps that are so simple that a computer
+													can execute them. I encourage you to first solve a few instances of a problem by
+													hand and think about what you did to find the solution. For example if the task is
+													sorting lists, sort some short lists yourself.</p>
+											</div>
+											<div class="tabs-item content">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates
+													reiciendis quaerat ut natus dignissimos distinctio perferendis commodi odit impedit
+													rerum totam, saepe corporis perspiciatis non, nam amet maxime sunt.</p>
+											</div>
+											<div class="tabs-item content">
+												<p>A reasonable method would be to find the smallest element, write it down and cross it
+													out of the original list and repeat this process until you have sorted the whole
+													list. Then you have to teach the computer 1) how to find the smallest element, 2)
+													how to write it down, 3) how to cross it out, and wrap this in a loop. Then continue
+													this task breakdown process until you’re confident you know how to write the
+													necessary program.</p>
+											</div>
+											<div class="tabs-item content">
+												<p>Learning to program means learning how to solve problems using code. Conceptually it
+													is not very difficult to write a program that solves a problem that you can solve
+													yourself. The skill you need to acquire is thinking very precisely about how you
+													solve the problem and breaking it down into steps that are so simple that a computer
+													can execute them. I encourage you to first solve a few instances of a problem by
+													hand and think about what you did to find the solution. For example if the task is
+													sorting lists, sort some short lists yourself.</p>
+											</div>
+										</div>
+									</div>
+								</section>
+								<div class="section">
+									<h4>Vertical Tabs</h4>
+									<div class="tabs tabs-vertical">
+										<ul class="tabs-nav section-bg">
+											<li class="active">Tab 1</li>
+											<li>Tab 2</li>
+											<li>Tab 3</li>
+											<li>Tab 4</li>
+										</ul>
+										<div class="tabs-container">
+											<div class="tabs-item content active">
+												<p>Learning to program means learning how to solve problems using code. Conceptually it
+													is not very difficult to write a program that solves a problem that you can solve
+													yourself. The skill you need to acquire is thinking very precisely about how you
+													solve the problem and breaking it down into steps that are so simple that a computer
+													can execute them. I encourage you to first solve a few instances of a problem by
+													hand and think about what you did to find the solution. For example if the task is
+													sorting lists, sort some short lists yourself.</p>
+											</div>
+											<div class="tabs-item content">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates
+													reiciendis quaerat ut natus dignissimos distinctio perferendis commodi odit impedit
+													rerum totam, saepe corporis perspiciatis non, nam amet maxime sunt.</p>
+											</div>
+											<div class="tabs-item content">
+												<p>A reasonable method would be to find the smallest element, write it down and cross it
+													out of the original list and repeat this process until you have sorted the whole
+													list. Then you have to teach the computer 1) how to find the smallest element, 2)
+													how to write it down, 3) how to cross it out, and wrap this in a loop. Then continue
+													this task breakdown process until you’re confident you know how to write the
+													necessary program.</p>
+											</div>
+											<div class="tabs-item content">
+												<p>Learning to program means learning how to solve problems using code. Conceptually it
+													is not very difficult to write a program that solves a problem that you can solve
+													yourself. The skill you need to acquire is thinking very precisely about how you
+													solve the problem and breaking it down into steps that are so simple that a computer
+													can execute them. I encourage you to first solve a few instances of a problem by
+													hand and think about what you did to find the solution. For example if the task is
+													sorting lists, sort some short lists yourself.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<section class="section">
+									<h4>Accordion</h4>
+									<div class="accordion">
+										<div class="row gutters-default">
+											<div class="col-lg-6 col-12">
+												<ul class="accordion-list">
+													<li class="accordion-item section-bg">
+														<div class="accordion-trigger">Can I track my order?</div>
+														<div class="accordion-content content" style="display: none;">
+															<p>Yes, you can! After placing your order you will receive an order
+																confirmation via email. Each order starts production 15 minutes after
+																your order is placed. Within a few hours of you placing your order, you
+																will receive an expected delivery time. When the order will be ready for
+																delivery, you will receive another email with the tracking number and a
+																link to trace the order online with the courier.</p>
+														</div>
+													</li>
+													<li class="accordion-item section-bg">
+														<div class="accordion-trigger">How can I change something in my order?</div>
+														<div class="accordion-content content" style="display: none;">
+															<p>If you need to change something in your order, please contact us
+																immediately. We usually process orders within 30 minutes, and once we
+																have processed your order, we will be unable to make any changes.</p>
+														</div>
+													</li>
+													<li class="accordion-item section-bg">
+														<div class="accordion-trigger">How can I pay for my order?</div>
+														<div class="accordion-content content" style="display: none;">
+															<p>We accept Visa, MasterCard, and American Express credit and debit cards
+																for your convenience.</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-6 col-12">
+												<ul class="accordion-list">
+													<li class="accordion-item section-bg">
+														<div class="accordion-trigger">When will my order be delivered?</div>
+														<div class="accordion-content content" style="display: none;">
+															<p>Delivery times will depend on your location. Once payment is confirmed
+																your order will be packaged. Delivery can be expected within 10 business
+																days.</p>
+														</div>
+													</li>
+													<li class="accordion-item section-bg">
+														<div class="accordion-trigger">Can I return an item?</div>
+														<div class="accordion-content content" style="display: none;">
+															<p>Please contact our administrators for more information on returning
+																products purchased on our website.</p>
+														</div>
+													</li>
+													<li class="accordion-item section-bg">
+														<div class="accordion-trigger">Do you provide any scripts?</div>
+														<div class="accordion-content content" style="display: none;">
+															<p>Our templates do not include any additional scripts. Newsletter
+																subscriptions, search fields, forums, image galleries (in HTML versions
+																of Flash products) are inactive. Basic scripts can be easily added at
+																www.TemplateTuning.com If you are not sure that the element you’re
+																interested in is active please contact our Support Chat for
+																clarification.</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- End main content -->
+
+		</div>
+
+		<!-- Begin footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-auto">
+						<!-- Begin logo -->
+						<a href="/" class="logo">Mirage</a><!-- End logo -->
+					</div>
+				</div>
+			</div>
+		</footer><!-- End footer -->
+
+	</main><!-- End main -->
+
+	<!-- Begin сallback popup -->
+	<div id="сallback_popup" class="popup_style popup_style_sally open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Title</h4>
+				<form action="#!" method="post" class="сallback_popup_form">
+					<!-- Begin hidden Field for send form -->
+					<input type="hidden" name="form_subject" value="Pop up form">
+					<!-- End hidden Field for send form -->
+					<div class="form-field">
+						<label for="popup-field-name" class="form-field-label">Name</label>
+						<input type="text" class="form-field-input" name="Name" value="" autocomplete="off" required="required" id="popup-field-name">
+					</div>
+					<div class="form-field">
+						<label for="popup-field-phone" class="form-field-label">Phone</label>
+						<input type="tel" class="form-field-input mask-phone" name="Phone" value="" autocomplete="off" required="required" id="popup-field-phone">
+					</div>
+					<div class="form-field">
+						<label for="popup-field-email" class="form-field-label">Email</label>
+						<input type="email" class="form-field-input" name="Email" value="" autocomplete="off" required="required" id="popup-field-email">
+					</div>
+					<div class="form-btn">
+						<button type="submit" class="btn btn-wide ripple">Send</button>
+					</div>
+				</form>
+			</div>
+			<div class="сallback_popup_close popup_close"></div>
+		</div>
+	</div><!-- End сallback popup -->
+
+	<div id="popup1" class="popup_style popup_style_wide popup_style_sally open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Modal Header</h4>
+				<div class="content">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis autem sed. In consectetur deserunt vero mollitia fuga est facere, incidunt quis, ipsa officia odit. Ut repudiandae ad eveniet cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione eos, accusantium corrupti cupiditate voluptatum iure sequi nostrum atque ipsam omnis? Facere tenetur nam quae eligendi quod dolorum illum mollitia.</p>
+				</div>
+			</div>
+			<div class="popup1_close popup_close"></div>
+		</div>
+	</div>
+
+	<div id="popup2" class="popup_style popup_style_wide popup_style_sandra open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Modal Header</h4>
+				<div class="content">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis autem sed. In consectetur deserunt vero mollitia fuga est facere, incidunt quis, ipsa officia odit. Ut repudiandae ad eveniet cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione eos, accusantium corrupti cupiditate voluptatum iure sequi nostrum atque ipsam omnis? Facere tenetur nam quae eligendi quod dolorum illum mollitia.</p>
+				</div>
+			</div>
+			<div class="popup2_close popup_close"></div>
+		</div>
+	</div>
+
+	<div id="popup3" class="popup_style popup_style_wide popup_style_slide_right open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Modal Header</h4>
+				<div class="content">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis autem sed. In consectetur deserunt vero mollitia fuga est facere, incidunt quis, ipsa officia odit. Ut repudiandae ad eveniet cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione eos, accusantium corrupti cupiditate voluptatum iure sequi nostrum atque ipsam omnis? Facere tenetur nam quae eligendi quod dolorum illum mollitia.</p>
+				</div>
+			</div>
+			<div class="popup3_close popup_close"></div>
+		</div>
+	</div>
+
+	<div id="popup4" class="popup_style popup_style_wide popup_style_slide_Left open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Modal Header</h4>
+				<div class="content">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis autem sed. In consectetur deserunt vero mollitia fuga est facere, incidunt quis, ipsa officia odit. Ut repudiandae ad eveniet cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione eos, accusantium corrupti cupiditate voluptatum iure sequi nostrum atque ipsam omnis? Facere tenetur nam quae eligendi quod dolorum illum mollitia.</p>
+				</div>
+			</div>
+			<div class="popup4_close popup_close"></div>
+		</div>
+	</div>
+
+	<div id="popup5" class="popup_style popup_style_wide popup_style_slide_top open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Modal Header</h4>
+				<div class="content">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis autem sed. In consectetur deserunt vero mollitia fuga est facere, incidunt quis, ipsa officia odit. Ut repudiandae ad eveniet cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione eos, accusantium corrupti cupiditate voluptatum iure sequi nostrum atque ipsam omnis? Facere tenetur nam quae eligendi quod dolorum illum mollitia.</p>
+				</div>
+			</div>
+			<div class="popup5_close popup_close"></div>
+		</div>
+	</div>
+
+	<div id="popup6" class="popup_style popup_style_wide popup_style_slide_bottom open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Modal Header</h4>
+				<div class="content">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis autem sed. In consectetur deserunt vero mollitia fuga est facere, incidunt quis, ipsa officia odit. Ut repudiandae ad eveniet cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione eos, accusantium corrupti cupiditate voluptatum iure sequi nostrum atque ipsam omnis? Facere tenetur nam quae eligendi quod dolorum illum mollitia.</p>
+				</div>
+			</div>
+			<div class="popup6_close popup_close"></div>
+		</div>
+	</div>
+
+	<div id="popup7" class="popup_style popup_style_wide popup_style_slide_fall open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Modal Header</h4>
+				<div class="content">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis autem sed. In consectetur deserunt vero mollitia fuga est facere, incidunt quis, ipsa officia odit. Ut repudiandae ad eveniet cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione eos, accusantium corrupti cupiditate voluptatum iure sequi nostrum atque ipsam omnis? Facere tenetur nam quae eligendi quod dolorum illum mollitia.</p>
+				</div>
+			</div>
+			<div class="popup7_close popup_close"></div>
+		</div>
+	</div>
+
+	<div id="popup8" class="popup_style popup_style_wide popup_style_slide_3dflip_horizontal open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Modal Header</h4>
+				<div class="content">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis autem sed. In consectetur deserunt vero mollitia fuga est facere, incidunt quis, ipsa officia odit. Ut repudiandae ad eveniet cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione eos, accusantium corrupti cupiditate voluptatum iure sequi nostrum atque ipsam omnis? Facere tenetur nam quae eligendi quod dolorum illum mollitia.</p>
+				</div>
+			</div>
+			<div class="popup8_close popup_close"></div>
+		</div>
+	</div>
+
+	<div id="popup9" class="popup_style popup_style_wide popup_style_slide_3dflip_vertical open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Modal Header</h4>
+				<div class="content">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis autem sed. In consectetur deserunt vero mollitia fuga est facere, incidunt quis, ipsa officia odit. Ut repudiandae ad eveniet cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione eos, accusantium corrupti cupiditate voluptatum iure sequi nostrum atque ipsam omnis? Facere tenetur nam quae eligendi quod dolorum illum mollitia.</p>
+				</div>
+			</div>
+			<div class="popup9_close popup_close"></div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="assets/js/script.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

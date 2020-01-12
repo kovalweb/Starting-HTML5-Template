@@ -1,0 +1,139 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+    font-weight: bold;
+	padding: 0;
+	margin: 0;
+	line-height: 1.3;
+	margin-bottom: 2rem;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.75rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+h5 {
+	font-size: 1.25rem;
+}
+h6 {
+    font-size: 1rem;
+}
+
+p {
+	margin: 0 0 2rem 0;
+}
+
+mark {
+    padding: .2em;
+    background-color: $c_main;
+    color: $c_white;
+}
+
+small {
+    font-size: 0.85rem;
+}
+
+blockquote {
+    padding: 0 0 0 1.25em;
+    font-style: italic;
+    color: $c_text2;
+    border-left: 3px solid $c_main;
+    p {
+        margin-bottom: 0!important;
+    }
+    footer {
+        color: $c_main;
+        font-style: normal;
+        padding-top: 0.8em;
+    }
+}
+
+.content {
+	> * {
+		margin-bottom: 2rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+    }
+    h2, h3, h4, h5, h6 {
+        margin-top: 2.5rem;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+	ul, ol {
+		list-style: none;
+        margin: 0 0 2rem 0;
+        padding: 0;
+        li {
+            position: relative;
+            display: flex;
+            margin-bottom: 0.625rem;
+            &::before {
+				margin-right: 5px;
+			}
+		}
+	}    
+    ul {
+		li {
+			&::before {
+				content: "";
+                position: relative;
+                display: block;
+                min-width: 8px;
+                width: 8px;
+                height: 8px;
+                margin-top: ($default-font-size * $default-line-height) / 2 - 5px;
+                margin-right: 12px;
+                background-color: $c_main;
+                border-radius: 50%;
+                line-height: 1;
+			}
+		}
+	}
+    ol {
+		counter-reset: item;
+        li {
+			&::before {
+				content: counter(item) ".";
+                counter-increment: item;
+                display: block;
+                min-width: 1rem;
+                color: $c_main;
+                top: 0;
+			}
+		}
+	}
+    img {
+		display: block;
+        margin-bottom: 2rem;
+        max-width: 100%;
+        height: auto;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+    
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
+    h5 {
+        font-size: 1.125rem;
+    }
+
+}

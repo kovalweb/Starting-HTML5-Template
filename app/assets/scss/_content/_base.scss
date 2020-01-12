@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+	&:before, &:after {
+		box-sizing: border-box;
+	}	
+}
+
+html {
+	font-size: $default-font-size;
+}
+	
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 1rem;
+	min-width: 320px;
+	position: relative;
+	line-height: $default-line-height;
+	font-family: $default-font;
+	font-weight: $default-font-weight;
+	overflow-x: hidden;
+	color: $c_text;
+	opacity: 1;
+	background-color: $c_white;
+}
+	
+main {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: $c_white;
+	display: flex;
+	flex-direction: column;
+}
+	
+.main-inner {
+	flex: 1 0 auto;
+	//overflow-x: hidden;
+	overflow: hidden;
+	background-color: $c_white;
+}
+	
+.footer {
+	flex: 0 0 auto;
+}
+	
+header, footer, aside {
+	ul, ol {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+	
+a {
+	color: $c_main;
+	text-decoration: underline;
+	transition: all 0.25s;
+	&:hover {
+		text-decoration: none;
+		color: $c_main;
+	}	
+}
+
+code {
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-break: break-word;
+}
+
+$gatters-default: 0.5rem;
+.gutters-default {
+	margin-right: -$gatters-default;
+	margin-left: -$gatters-default;
+	> .col,
+	> [class*="col-"] {
+		padding-right: $gatters-default;
+		padding-left: $gatters-default;
+	}
+}
+
+$gatters-20: 10px;
+.gutters-20 {
+	margin-right: -$gatters-20;
+	margin-left: -$gatters-20;
+	> .col,
+	> [class*="col-"] {
+		padding-right: $gatters-20;
+		padding-left: $gatters-20;
+	}
+}
+$gatters-10: 5px;
+.gutters-10 {
+	margin-right: -$gatters-10;
+	margin-left: -$gatters-10;
+	> .col,
+	> [class*="col-"] {
+		padding-right: $gatters-10;
+		padding-left: $gatters-10;
+	}
+}
+
+/* Begin IE browser */
+
+.ie-browser {
+	display: table;
+	width: 100%;
+	height: 100%;
+	font-size: 1.25rem;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+.ie-browser-tr {
+	display: table-row;
+}
+.ie-browser-td {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* End IE browser */

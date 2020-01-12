@@ -1,0 +1,42 @@
+.main-content {
+	position: relative;
+	padding: 5rem 0;
+}
+
+.title-center {
+	text-align: center;
+}
+
+.wrapp-page-title {
+	margin-bottom: 3.5rem;
+	.page-title {
+		margin-bottom: 0;
+	}
+	&.page-title-center {
+		text-align: center;
+	}
+	&.page-title-m0 {
+		margin-bottom: 0;
+	}
+}
+.page-title {
+	font-weight: bold;
+}
+.page-desc {
+	margin-top: 1.25rem;
+	max-width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	color: $c_text2;
+}
+
+.page-404-title {
+	font-size: 5rem;
+} 
+
+.search-page-container {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}

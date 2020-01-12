@@ -1,0 +1,64 @@
+.section {
+	position: relative;
+	padding: 5rem 0;
+}
+
+.page-sections {
+	padding-top: 3.5rem;
+	.section {
+		padding: 0;
+		margin-bottom: 3.5rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.section-overflow-hidden {
+	overflow: hidden;
+}
+.section-dark {
+	background-color: $c_bgc_dark;
+	color: $c_white;
+	a {
+		color: $c_white;
+	}
+}
+.section-bg {
+	background-color: $c_bgc;
+	background-position: center;
+	background-size: cover;
+}
+
+.wrapp-section-title {
+	margin-bottom: 3.5rem;
+}
+.section-title {
+	position: relative;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+.section-desc {
+	margin-top: 1.25rem;
+	max-width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	color: $c_text2;
+}
+.section-title-center {
+	text-align: center;
+}
+
+.section-btns {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-left: -1rem;
+	margin-bottom: -1rem;
+	margin-top: 0.3125rem;
+	.btn {
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+	}
+}

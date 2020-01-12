@@ -1,0 +1,43 @@
+.header {
+    position: relative;
+}
+.header-fixed {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: $c_white;
+    border-bottom: 1px solid $c_main;
+    &.fixed {
+        position: fixed;
+        z-index: 101;
+    }
+}
+
+.logo {
+    color: $c_main;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.main-mnu {
+    > ul {
+        display: flex;
+        > li {
+            margin-right: 1rem;
+            &:last-child {
+                margin-right: 0;
+            }
+            > a {
+                text-decoration: none;
+            }
+            &:hover {
+                > a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>404</title>
+
+	<meta name="description" content="Description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+		
+	<meta property="og:image" content="assets/img/preview.jpg">
+
+	<link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+
+<body>
+
+	<main class="main">
+
+		<div class="main-inner">
+			
+			<!-- Begin header -->
+			<header class="header">
+				<div class="header-fixed">
+					<div class="container">
+						<div class="row align-items-center justify-content-between">
+							<div class="col-auto">
+								<!-- Begin logo -->
+								<a href="/" class="logo">Mirage</a><!-- End logo -->
+							</div>
+							<div class="col-auto">
+								<div class="wrapp-btn">
+									<a href="#сallback_popup" class="btn btn-small ripple сallback_popup_open">Call Back</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header><!-- End header -->
+			
+			<!-- Begin main content -->
+			<div class="main-content">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="content page_404">
+								<h1>Ooops... Error 404</h1>
+								<div class="page_404_desc fz20 color_blue">Sorry, but the page you are looking for doesn't exist.</div>
+								<div class="">You can go to the <a href="/">home page</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- End main content -->
+
+		</div>
+
+		<!-- Begin footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-auto">
+						<!-- Begin logo -->
+						<a href="/" class="logo">Mirage</a><!-- End logo -->
+					</div>
+				</div>
+			</div>
+		</footer><!-- End footer -->
+
+	</main><!-- End main -->
+
+	<!-- Begin сallback popup -->
+	<div id="сallback_popup" class="popup_style popup_style_sally open_popup" style="display:none;">
+		<div class="popup">
+			<div class="popup_content">
+				<h4 class="popup_title">Title</h4>
+				<form action="#!" method="post" class="сallback_popup_form">
+					<!-- Begin hidden Field for send form -->
+					<input type="hidden" name="form_subject" value="Pop up form">
+					<!-- End hidden Field for send form -->
+					<div class="form-field">
+						<label for="popup-field-name" class="form-field-label">Name</label>
+						<input type="text" class="form-field-input" name="Name" value="" autocomplete="off" required="required" id="popup-field-name">
+					</div>
+					<div class="form-field">
+						<label for="popup-field-phone" class="form-field-label">Phone</label>
+						<input type="tel" class="form-field-input mask-phone" name="Phone" value="" autocomplete="off" required="required" id="popup-field-phone">
+					</div>
+					<div class="form-field">
+						<label for="popup-field-email" class="form-field-label">Email</label>
+						<input type="email" class="form-field-input" name="Email" value="" autocomplete="off" required="required" id="popup-field-email">
+					</div>
+					<div class="form-btn">
+						<button type="submit" class="btn btn-wide ripple">Send</button>
+					</div>
+				</form>
+			</div>
+			<div class="сallback_popup_close popup_close"></div>
+		</div>
+	</div><!-- End сallback popup -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="assets/js/script.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

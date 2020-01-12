@@ -1,0 +1,99 @@
+table {
+    width: 100%;
+    border-bottom: $el-border-width solid $c_border;
+    &.table-secondary {
+        tr {
+            &:nth-child(even) {
+                background-color: transparent;
+            }  
+        }
+        tbody {
+            tr {
+                border-bottom: $el-border-width solid $c_border;
+                &:hover {
+                    background-color: $c_bgc;
+                }
+            }
+        }
+    }
+    &.table-bordered {
+        tr {
+            &:nth-child(even) {
+                background-color: transparent;
+            }  
+        }
+        td {
+            border: $el-border-width solid $c_border;
+        }
+        thead {
+            tr {
+                th {
+                    background-color: $c_border;
+                    color: $c_text;
+                    border: $el-border-width solid $c_border;
+                }
+            }
+        }
+    }
+    td, th {
+        padding: 1rem;
+    }
+    tr {
+        &:nth-child(even) {
+            background-color: $c_bgc;
+        }
+    }
+    thead {
+        tr {
+            th {
+                font-weight: 500;
+                text-transform: uppercase;
+                background-color: $c_main;
+                color: $c_white;
+            }
+        }
+    }
+    tfoot {
+        font-weight: 600;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+
+    .table-responsive {
+        position: relative;
+        width: 100%;
+        overflow-y: auto;
+        table {
+            width: 650px;
+        }       
+    }   
+    .table-responsive-outer {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 100%;
+            background-image: -o-linear-gradient(0deg, rgba(255,255,255,.3), #fff);
+            background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255,255,255,.3)), to(#fff));
+            background-image: -o-linear-gradient(bottom, rgba(255,255,255,.3), #fff);
+            background-image: linear-gradient(0deg, rgba(255,255,255,.3), #fff);
+        }           
+    }   
+    .table-container {
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: $el-border-radius;
+            border: 3px solid #fff;
+            background-color: rgba(0, 0, 0, .3);
+        }
+    }
+
+}
