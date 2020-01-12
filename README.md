@@ -1,1 +1,1 @@
-# Starting-HTML5-Template
+# Starting HTML5 Template
