@@ -5501,6 +5501,10 @@ code {
     padding-left: 5px;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* Begin IE browser */
 .ie-browser {
     display: table;
