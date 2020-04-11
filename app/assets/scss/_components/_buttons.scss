@@ -15,8 +15,8 @@
 	display: inline-block;
 	text-align: center;
 	font-size: 1rem;
-	color: $c_white;
-	fill: $c_white;
+	color: $primary-color;
+	fill: $primary-color;
 	background: $bg-btn;
 	text-decoration: none;
 	text-align: center;
@@ -100,8 +100,8 @@
 	}	
 	&:hover {
 		background: $bg-btn-hover;
-		color: $c_white;
-		fill: $c_white;
+		color: $primary-color;
+		fill: $primary-color;
 	}	
 }
 	
@@ -114,7 +114,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	border: 2px solid rgba($c_white, 0.3);
+	border: 2px solid rgba($primary-color, 0.3);
 	border-radius: 50%;
 	animation: ripple 1s ease forwards;
 	z-index: 3;

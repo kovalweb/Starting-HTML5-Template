@@ -14,7 +14,7 @@
 
 .item-style {
     position: relative;
-    background-color: $c_white;
+    background-color: $primary-color;
     border-radius: $el-border-radius;
     overflow: hidden;
     color: $text-primary;
@@ -41,7 +41,7 @@
 
 .img-style {
     border: $el-border-width solid $border-color;
-    background-color: $c_bgc;
+    background-color: $primary-bg-color;
     border-radius: $el-border-radius;
     overflow: hidden;
 }

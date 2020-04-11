@@ -4,7 +4,7 @@
 #gdpr-cookie-message h3 {
     font-size: 1.3125rem;
     font-weight: $default-font-weight;
-    color: $c_bgc_dark;
+    color: $secondary-color;
     margin-bottom: 1.25rem;
 }
 #gdpr-cookie-message p, ul {
@@ -27,9 +27,9 @@
     max-width: 90%;
 }
 #gdpr-cookie-message code {
-    color: $c_bgc_dark;
+    color: $secondary-color;
     font-size: 1rem;
-    background: $c_white;
+    background: $primary-color;
     padding: 0.1875rem 0.3125rem;
     border: $el-border-width solid $border-color;
 }
@@ -43,10 +43,10 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba($c_bgc_dark, 0.9);
+    background-color: rgba($secondary-color, 0.9);
     padding: 1.25rem 1rem;
     padding-right: 220px;
-    box-shadow: 0 0.375rem 0.375rem rgba($c_black, 0.25);
+    box-shadow: 0 0.375rem 0.375rem rgba($secondary-color, 0.25);
     z-index: 111111;
 }
 #gdpr-cookie-message h4 {
@@ -56,7 +56,7 @@
     margin-bottom: 0.625rem;
 }
 #gdpr-cookie-message h5 {
-    color: $c_bgc_dark;
+    color: $secondary-color;
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 0.625rem;
@@ -78,16 +78,16 @@
     display: inline-block;
 }
 #gdpr-cookie-message a {
-    color: $c_bgc_dark;
+    color: $secondary-color;
     text-decoration: none;
     font-size: 0.9375rem;
     padding-bottom: 2px;
-    border-bottom: $el-border-width dotted rgba($c_white, 0.75);
+    border-bottom: $el-border-width dotted rgba($primary-color, 0.75);
     transition: all 0.3s ease-in;
 }
 #gdpr-cookie-message a:hover {
     color: white;
-    border-bottom-color: $c_bgc_dark;
+    border-bottom-color: $secondary-color;
     transition: all 0.3s ease-in;
 }
 #gdpr-cookie-message button,
@@ -96,8 +96,8 @@ button#ihavecookiesBtn {
 	display: inline-block;
 	text-align: center;
 	font-size: 1rem;
-	color: $c_white;
-	fill: $c_white;
+	color: $primary-color;
+	fill: $primary-color;
 	background: $bg-btn;
 	text-decoration: none;
 	text-align: center;
@@ -111,12 +111,12 @@ button#ihavecookiesBtn {
 }
 #gdpr-cookie-message button:hover {
     background: $bg-btn-hover;
-	color: $c_white;
-	fill: $c_white;
+	color: $primary-color;
+	fill: $primary-color;
 }
 button#gdpr-cookie-advanced {
-    background: $c_white;
-    color: $c_bgc_dark;
+    background: $primary-color;
+    color: $secondary-color;
 }
 #gdpr-cookie-message button:disabled {
     opacity: 0.3;

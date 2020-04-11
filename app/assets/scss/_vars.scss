@@ -6,18 +6,17 @@ $default-font-weight: 500;
 $default-line-height: 1.625;
 
 $main-color: #1A2956;
-$c_white: #ffffff;
-$c_black: #000000;
-$c_bgc: #F0F4F8;
+
+$primary-color: #ffffff;
+$primary-bg-color: #F0F4F8;
+$secondary-color: #000000;
+$secondary-bg-color: #303036;
 
 $text-primary: #303036;
 $text-secondary: #63636b;
 $text-success: #28a745;
 $text-danger: #ff3d0d;
 $text-warning: #ffc107;
-
-$c_bgc_dark: #303036;
-$c_bgc_dark_text: rgba($c_white, 0.4);
 
 $border-color: #D4D4E1;
 $placeholder-color: #B7B7BA;

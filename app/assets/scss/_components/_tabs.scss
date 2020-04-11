@@ -68,7 +68,7 @@
             }
             &:hover, &.active {
                 background-color: $main-color;
-                color: $c_white;
+                color: $primary-color;
             }
         }
     }
@@ -119,7 +119,7 @@
         flex-wrap: wrap;
         border: none;
         border-radius: $el-border-radius;
-        background-color: $c_bgc;
+        background-color: $primary-bg-color;
         overflow: hidden;
         li {
             width: 100%;
@@ -134,7 +134,7 @@
             padding: 0.625rem 1rem;
             &:hover, &.active {
                 background-color: $main-color;
-                color: $c_white;
+                color: $primary-color;
             }
         }
     }

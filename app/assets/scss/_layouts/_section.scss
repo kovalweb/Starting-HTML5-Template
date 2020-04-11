@@ -18,14 +18,14 @@
 	overflow: hidden;
 }
 .section-dark {
-	background-color: $c_bgc_dark;
-	color: $c_white;
+	background-color: $secondary-bg-color;
+	color: $primary-color;
 	a {
-		color: $c_white;
+		color: $primary-color;
 	}
 }
 .section-bg {
-	background-color: $c_bgc;
+	background-color: $primary-bg-color;
 	background-position: center;
 	background-size: cover;
 }
