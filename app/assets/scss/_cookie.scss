@@ -31,7 +31,7 @@
     font-size: 1rem;
     background: $c_white;
     padding: 0.1875rem 0.3125rem;
-    border: $el-border-width solid $c_border;
+    border: $el-border-width solid $border-color;
 }
 
 #ihavecookiesBtn {
@@ -98,7 +98,7 @@ button#ihavecookiesBtn {
 	font-size: 1rem;
 	color: $c_white;
 	fill: $c_white;
-	background: $c_btn_bg;
+	background: $bg-btn;
 	text-decoration: none;
 	text-align: center;
 	padding: 0.75em 2em;
@@ -110,7 +110,7 @@ button#ihavecookiesBtn {
 	transition: all 0.25s;
 }
 #gdpr-cookie-message button:hover {
-    background: $c_btn_bg_hover;
+    background: $bg-btn-hover;
 	color: $c_white;
 	fill: $c_white;
 }

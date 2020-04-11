@@ -21,7 +21,7 @@ body {
 	font-family: $default-font;
 	font-weight: $default-font-weight;
 	overflow-x: hidden;
-	color: $c_text;
+	color: $text-primary;
 	opacity: 1;
 	background-color: $c_white;
 }
@@ -56,12 +56,12 @@ header, footer, aside {
 }
 	
 a {
-	color: $c_main;
+	color: $main-color;
 	text-decoration: underline;
 	transition: all 0.25s;
 	&:hover {
 		text-decoration: none;
-		color: $c_main;
+		color: $main-color;
 	}	
 }
 

@@ -40,7 +40,7 @@
     justify-content: center;
 	cursor: pointer;
     z-index: 1;
-    color: $c_main;
+    color: $main-color;
     transition: all 0.25s;
     &::before, &::after {
         content: "";
@@ -51,7 +51,7 @@
         height: 2px;
         margin-top: -1px;
         margin-left: -0.625rem;
-        background-color: $c_main;
+        background-color: $main-color;
     }
     &::before {
         transform: rotate(-45deg);

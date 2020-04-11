@@ -1,6 +1,6 @@
 table {
     width: 100%;
-    border-bottom: $el-border-width solid $c_border;
+    border-bottom: $el-border-width solid $border-color;
     &.table-secondary {
         tr {
             &:nth-child(even) {
@@ -9,7 +9,7 @@ table {
         }
         tbody {
             tr {
-                border-bottom: $el-border-width solid $c_border;
+                border-bottom: $el-border-width solid $border-color;
                 &:hover {
                     background-color: $c_bgc;
                 }
@@ -23,14 +23,14 @@ table {
             }  
         }
         td {
-            border: $el-border-width solid $c_border;
+            border: $el-border-width solid $border-color;
         }
         thead {
             tr {
                 th {
-                    background-color: $c_border;
-                    color: $c_text;
-                    border: $el-border-width solid $c_border;
+                    background-color: $border-color;
+                    color: $text-primary;
+                    border: $el-border-width solid $border-color;
                 }
             }
         }
@@ -48,7 +48,7 @@ table {
             th {
                 font-weight: 500;
                 text-transform: uppercase;
-                background-color: $c_main;
+                background-color: $main-color;
                 color: $c_white;
             }
         }

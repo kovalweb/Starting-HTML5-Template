@@ -21,14 +21,14 @@
     display: flex;
     align-items: flex-start;
     border-radius: $el-border-radius;
-    color: #004085;
+    color: $main-color;
     font-size: 0.875rem;
     margin-left: $grid-gutter-width/2;
-    border: $el-border-width solid #b8daff;
-    background-color: #b8daff;
+    border: $el-border-width solid rgba($main-color, 0.2);
+    background-color: rgba($main-color, 0.2);
     margin-bottom: 0.625rem;
     a {
-        color: #004085;
+        color: $main-color;
         text-decoration: none;
         font-weight: 600;
         &:hover {
@@ -39,27 +39,27 @@
         margin-bottom: 0;
     }
     &.alert-success {
-        background-color: #d4edda;
-        border-color: #d4edda;
-        color: #155724;
+        background-color: rgba($text-success, 0.2);
+        border-color: rgba($text-success, 0.2);
+        color: $text-success;
         a {
-            color: #155724;
+            color: $text-success;
         }
     }
     &.alert-danger {
-        background-color: #f8d7da;
-        border-color: #f8d7da;
-        color: #721c24;
+        background-color: rgba($text-danger, 0.2);
+        border-color: rgba($text-danger, 0.2);
+        color: $text-danger;
         a {
-            color: #721c24;
+            color: $text-danger;
         }
     } 
     &.alert-warning {
-        background-color: #fff3cd;
-        border-color: #fff3cd;
-        color: #856404;
+        background-color: rgba($text-warning, 0.2);
+        border-color: rgba($text-warning, 0.2);
+        color: $text-warning;
         a {
-            color: #856404;
+            color: $text-warning;
         }
     }
 }
@@ -82,7 +82,7 @@
     background-color: transparent;
     line-height: 1;
     cursor: pointer;
-    color: $c_text;
+    color: $text-primary;
     outline: none;
     opacity: 0.6;
     transition: all 0.25s;

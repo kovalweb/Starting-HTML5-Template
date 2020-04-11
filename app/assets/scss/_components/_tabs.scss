@@ -6,8 +6,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    border-bottom: $el-border-width solid $c_border;
-    color: $c_text;
+    border-bottom: $el-border-width solid $border-color;
+    color: $text-primary;
     li {
         padding: 0.625rem 0;
         margin-right: 2.5rem;
@@ -24,12 +24,12 @@
             bottom: -1px;
             width: 0;
             height: 2px;
-            background-color: $c_main;
+            background-color: $main-color;
             transform: translateX(-50%);
             transition: all 0.25s;
         }
         &.active, &:hover {
-            color: $c_main;
+            color: $main-color;
             &::after {
                 width: 100%;
             }
@@ -59,7 +59,7 @@
             width: 100%;
             margin: 0;
             padding: 1rem 1.25rem;
-            border-bottom: 1px solid $c_border;
+            border-bottom: 1px solid $border-color;
             &:last-child {
                 border: none;
             }
@@ -67,7 +67,7 @@
                 content: none;
             }
             &:hover, &.active {
-                background-color: $c_main;
+                background-color: $main-color;
                 color: $c_white;
             }
         }
@@ -124,7 +124,7 @@
         li {
             width: 100%;
             margin: 0;
-            border-bottom: $el-border-width solid $c_border;
+            border-bottom: $el-border-width solid $border-color;
             &:last-child {
                 border-bottom: none;
             }
@@ -133,7 +133,7 @@
             }
             padding: 0.625rem 1rem;
             &:hover, &.active {
-                background-color: $c_main;
+                background-color: $main-color;
                 color: $c_white;
             }
         }

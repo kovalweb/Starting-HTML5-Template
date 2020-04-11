@@ -8,7 +8,7 @@
     width: 100%;
     padding: 1rem 0;
     background-color: $c_white;
-    border-bottom: 1px solid $c_main;
+    border-bottom: 1px solid $main-color;
     &.fixed {
         position: fixed;
         z-index: 101;
@@ -16,7 +16,7 @@
 }
 
 .logo {
-    color: $c_main;
+    color: $main-color;
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: bold;

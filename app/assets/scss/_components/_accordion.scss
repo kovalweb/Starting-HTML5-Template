@@ -1,5 +1,5 @@
 .accordion {
-    color: $c_text2;
+    color: $text-secondary;
     margin-bottom: -1.25rem;
 }
 .accordion-col {
@@ -29,7 +29,7 @@
     position: relative;
     cursor: pointer;
     padding: 1.25rem 3.125rem 1.25rem 1.25rem;
-    color: $c_text;
+    color: $text-primary;
     line-height: 1.2;
     &::after, &::before {
         content: "";
@@ -38,7 +38,7 @@
         top: 50%;
         width: 14px;
         height: 2px;
-        background-color: $c_main;
+        background-color: $main-color;
         margin-top: -1px;
         transition: all 0.3s;
     }
@@ -50,5 +50,5 @@
 .accordion-content {
     display: none;
     padding: 1.25rem;
-    border-top: $el-border-width solid $c_border;
+    border-top: $el-border-width solid $border-color;
 }
